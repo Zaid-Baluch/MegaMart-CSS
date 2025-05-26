@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mega-Mart</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <h1 id="nav">MegaMart</h1>
+    <h2 id="caption">Your Complete Shopping Destination</h2>
+    <ul class="pages">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="electronic.html">Electronics</a></li>
+      <li><a href="fashion.html">Fashion</a></li>
+      <li><a href="book.html">Books</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div id="productSearch">
+      <h2>Product Search</h2>
+      <input
+        type="text"
+        placeholder="Search over 10,000 products"
+        id="input1"
+      />
+      <input type="submit" name="Search" value="Search" id="button1" />
+    </div>
+
+    <h2>Featured Products</h2>
+    <center><p id="paragraph">Today's Special Offers</p></center>
+    <table border="1" width="950px" id="table1">
+      <tr id="tableHead">
+        <th>Product</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td>
+          <img
+            src="https://t3.ftcdn.net/jpg/00/91/07/82/360_F_91078252_i7cx2uJzDzgoJGDdUAHtVAcpjugVauX9.jpg"
+            alt=""
+            height="100px"
+          />
+          <b>Wireless Headphones</b>
+        </td>
+        <td>
+          Premium noise-canceling Bluthoth Headphones
+          <ul>
+            <li>40mm drivers</li>
+            <li>30-hours battery</li>
+            <li>IPX4 waterproof</li>
+          </ul>
+        </td>
+        <td>
+          <p><del>$199.99 </del></p>
+          <p><ins>$149.99 </ins></p>
+        </td>
+        <td>in stock</td>
+        <td>
+          <input type="button" name="Add to Cart" value="Add to Cart" />
+          <p>Available quantities: 15</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <center>
+            <img
+              src="https://www.xiaomistore.pk/xiaomi_images/product/images/new_goods/gallery_img/1141_656ef4e2301d8_1701770466.webp"
+              alt=""
+              height="120px"
+            />
+          </center>
+          <h3>Smart Watch Pro</h3>
+        </td>
+        <td>
+          <p>Advanced fitness tracking smart watch</p>
+          <ol>
+            <li>Heart rate monitor</li>
+            <li>GPS tracking</li>
+            <li>Water resistant</li>
+          </ol>
+        </td>
+        <td>
+          <p>$89.99</p>
+        </td>
+        <td>
+          <p>Low Stock</p>
+        </td>
+        <td>
+          <input type="submit" name="Add to Cart" value="Add to Cart" />
+        </td>
+      </tr>
+    </table>
+    <h2>Create New Account</h2>
+    <form action="">
+      <fieldset class="field">
+        <legend class="field1">Personal Information</legend>
+        <label for="">First Name:</label>
+        <input type="text" required />
+        <label for="">Last Name:</label>
+        <input type="text" required />
+        <label for="">Date of Birth:</label>
+        <input type="date" />
+        <label for="male">Gender: Male</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="Female" />
+      </fieldset>
+      <fieldset class="field">
+        <legend class="field1">Account Details</legend>
+        <label for="">Email:</label>
+        <input type="email" required />
+        <label for="">Password:</label>
+        <input type="password" required />
+        <label for="">Phone Number:</label>
+        <input type="tel" required />
+        <label for="">Subscribe to Newsletter:</label>
+        <input type="checkbox" name="" id="" />
+      </fieldset>
+      <fieldset class="field">
+        <legend class="field1">Shipping Address</legend>
+        <label for="">Street Address:</label>
+        <textarea name="" id=""></textarea>
+        <label for="">Country:</label>
+        <input type="text" />
+        <label for="">ZIP Code:</label>
+        <input type="text" />
+      </fieldset>
+      <input
+        type="submit"
+        name="Create Account"
+        value="Crate Account"
+        id="inputButton"
+      />
+      <input type="reset" name="Clear Form" value="Clear Form" />
+    </form>
+    <h2>Product Comparison</h2>
+    <table border="1" id="table2">
+      <tr id="tHead">
+        <th>Feature</th>
+        <th>Basic Model</th>
+        <th>Pro Model</th>
+        <th>Premium Model</th>
+      </tr>
+      <tr>
+        <td><b>Bettery Life</b></td>
+        <td>8 hours</td>
+        <td>12 hours</td>
+        <td>24 hours</td>
+      </tr>
+      <tr>
+        <td><b>Water Resistance</b></td>
+        <td>IPX4</td>
+        <td>IPX7</td>
+        <td>IP68</td>
+      </tr>
+      <tr>
+        <td><b>Waranty</b></td>
+        <td>1 Year</td>
+        <td colspan="2">2 Years</td>
+      </tr>
+      <tr>
+        <td id="menuList" colspan="4">* All price include VAT</td>
+      </tr>
+    </table>
+    <h2>Checkout Process</h2>
+    <form action="">
+      <fieldset>
+        <legend>Payment Information</legend>
+        <label for="card">Card Type:</label>
+        <input type="radio" name="visa" id="card" /> Visa
+        <label for="card"></label>
+        <input type="radio" name="visa" id="card" /> Master Card
+        <label for="card"></label>
+        <input type="radio" name="visa" id="card" /> American Express
+        <label for="card"></label><br />
+        <label for="">Card Number:</label>
+        <input type="tel" id="cardNum" />
+        <label for="">Expiry Date:</label>
+        <input type="date" name="" id="date" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Order Summary</legend>
+        <table border="1">
+          <tr id="thead">
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>wireless Headphones</td>
+            <td>2</td>
+            <td>$299.98</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>-</td>
+            <td>$15.00</td>
+          </tr>
+          <tr>
+            <td colspan="2" id="thead2">
+              <center><b>Total</b></center>
+            </td>
+
+            <td>$314.98</td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <input
+        type="submit"
+        name="Complete Purchase"
+        value="Complete Purchase"
+        id="PurchaseBttn"
+      />
+    </form>
+    <h2>Product Video</h2>
+    <video controls src="/mega-mart/video.mp4" height="350px"></video>
+    <h2>Product Audio Description</h2>
+    <audio id="audio" controls src="./mega-mart/audio.mp3 "></audio>
+    <div id="contact">
+    <h2><i> Contact Us</i></h2>
+    <p>
+      <i>Email:</i>
+      <a href="mailto:zaidbeluch@gmail.com">support@megamart.com</a>
+    </p>
+    <p><i>Phone:</i> <a href="0344214448">+1 (124) 456-8790</a></p>
+    <p>
+      <i
+        >Address: 123 Commerce Street <br />
+        New York, NY 10001</i
+      >
+      </div>
+    </p>
+    <p>Here is our location</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.909441390988!2d67.1956125740121!3d24.866942345000645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb331004a2aa071%3A0xf2e132e72edf7754!2sSMIT%20Malir%20Campus!5e0!3m2!1sen!2s!4v1747129205323!5m2!1sen!2s"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <h3>Checkout the latest video</h3>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/it1rTvBcfRg?si=zx85tb24uAzxk3T6"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <h3>Quick Links</h3>
+    <ul>
+      <li><a href="">Term of Service</a></li>
+      <li><a href="">Privacy policy</a></li>
+      <li><a href="">Return Policy</a></li>
+    </ul>
+    <p>© 2023 MegaMart.All right reserved.</p>
+    <p>
+      Follow us on
+      <a href="https://www.linkedin.com/in/zaidbaluch">Social Media</a>
+    </p>
+  </body>
+</html>
